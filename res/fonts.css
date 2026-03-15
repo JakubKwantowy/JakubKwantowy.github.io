@@ -1,0 +1,8 @@
+@font-face {
+    font-family: jetbrains-mono;
+    src: url(/res/JetBrainsMono[wght].ttf);
+}
+
+:root {
+    --font-default: jetbrains-mono;
+}

@@ -1,0 +1,31 @@
+:root {
+    --color-black:   #000;
+    --color-blue:    #00a;
+    --color-green:   #0a0;
+    --color-cyan:    #0aa;
+    --color-red:     #a00;
+    --color-magenta: #a0a;
+    --color-brown:   #a50;
+    --color-white:   #aaa;
+
+    --color-gray:         #555;
+    --color-lightblue:    #55f;
+    --color-lightgreen:   #5f5;
+    --color-lightcyan:    #5ff;
+    --color-lightred:     #f55;
+    --color-lightmagenta: #f5f;
+    --color-yellow:       #ff5;
+    --color-white-hi:     #fff;
+}
+
+.black {
+    color: var(--color-black);
+}
+
+.white {
+    color: var(--color-white);
+}
+
+.white-hi {
+    color: var(--color-white-hi);
+}

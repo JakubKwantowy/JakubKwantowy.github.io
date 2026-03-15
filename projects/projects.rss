@@ -1,0 +1,19 @@
+<rss version="2.0">
+    <channel>
+        <title>JakubKwantowy.github.io / My Projects</title>
+        <description>My Projects.</description>
+        <link>https://JakubKwantowy.github.io/projects</link>
+
+        <item>
+            <title>JakubKwantowy.github.io</title>
+            <description>This very website!</description>
+            <link>https://JakubKwantowy.github.io/</link>
+        </item>
+
+        <item>
+            <title>Halogen</title>
+            <description>A FORTH-like programming language</description>
+            <link>https://github.com/JakubKwantowy/Halogen</link>
+        </item>
+    </channel>
+</rss>

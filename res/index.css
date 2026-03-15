@@ -1,0 +1,35 @@
+#easteregg:hover {
+    text-decoration: underline;
+}
+
+#subtitle {
+    text-align: center;
+    user-select: none;
+
+    font-style: italic;
+    font-size: 20px;
+}
+
+#subtitle::before, #subtitle::after {
+    content: '"';
+}
+
+#ls > * {
+    font-weight: bold;
+}
+
+#ls > *::before {
+    font-weight: normal;
+    content: 'drwxrwxr-x 1 jakub jakub 4096 jan 1 1970 ';
+}
+
+@media (max-width: 1024px) {
+    #ls > *::before {
+        content: '';
+    }
+
+    #ls > * > *::before {
+        font-weight: normal;
+        content: '/';
+    }
+}

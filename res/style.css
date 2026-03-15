@@ -1,0 +1,72 @@
+@import url(/res/colors.css);
+@import url(/res/fonts.css);
+@import url(/res/topbar.css);
+
+body, html {
+    background: var(--color-black);
+    color: var(--color-green);
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 24px;
+    font-family: var(--font-default);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#container a:link, #container a:visited {
+    color: var(--color-lightgreen);
+}
+
+::selection {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+h1 {
+    color: var(--color-lightgreen);
+    
+    text-align: center;
+    user-select: none;
+}
+
+.centered {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+ul > li::marker {
+    content: '- ';
+}
+
+@keyframes cursor {
+    0% {
+        background: var(--color-green);
+    }
+
+    50% {
+        background: var(--color-black);
+    }
+}
+
+.cursor {
+    animation: cursor steps(1) 1s infinite;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 16px;
+    margin: 4em 0 0 0;
+}

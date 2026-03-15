@@ -1,0 +1,38 @@
+#projects {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects > * {
+    margin: 0.25em;
+    padding: 0.25em;
+
+    text-align: center;
+    user-select: none;
+
+    background: var(--color-gray);
+    color: var(--color-white);
+
+    border: 0.125em solid var(--color-lightgreen);
+    border-top-color: var(--color-green);
+    border-left-color: var(--color-green);
+}
+
+#projects > * > a:link, #projects > * > a:visited {
+    color: var(--color-white-hi);
+}
+
+#projects > * > a::before {
+    content: '/My Projects/';
+}
+
+#rss {
+    text-align: center;
+}
+
+#rss img {
+    height: 1em;
+}
