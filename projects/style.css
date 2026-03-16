@@ -13,12 +13,12 @@
     text-align: center;
     user-select: none;
 
-    background: var(--color-gray);
-    color: var(--color-white);
+    background: var(--color-brown);
+    color: var(--color-yellow);
 
-    border: 0.125em solid var(--color-lightgreen);
-    border-top-color: var(--color-green);
-    border-left-color: var(--color-green);
+    border: 0.125em solid var(--color-gray);
+    border-top-color: var(--color-white);
+    border-left-color: var(--color-white);
 }
 
 #projects > * > a:link, #projects > * > a:visited {

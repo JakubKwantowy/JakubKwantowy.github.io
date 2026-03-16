@@ -1,3 +1,13 @@
+#hint {
+    position: absolute;
+    left: 8px;
+    top: 16px;
+
+    font-size: 16px;
+    color: var(--color-red);
+    user-select: none;
+}
+
 #easteregg:hover {
     text-decoration: underline;
 }

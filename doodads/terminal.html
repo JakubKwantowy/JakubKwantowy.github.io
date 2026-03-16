@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/res/style.css">
+        <link rel="stylesheet" href="/doodads/style.css">
+        <script src="/res/common.js"></script>
+        <script src="/doodads/terminal.js"></script>
+        <style>
+            #console {
+                height: 25em;
+                overflow: scroll;
+            }
+
+            #input {
+                display: flex;
+            }
+
+            input {
+                flex: 1;
+
+                font-size: 1em;
+                font-family: var(--font-default);
+
+                border: none;
+                background: inherit;
+                color: var(--color-lightgreen);
+            }
+
+            input:focus {
+                outline: none;
+            }
+        </style>
+        <title>JakubKwantowy.github.io / JavaScript Terminal</title>
+    </head>
+    <body>
+        <div id="topbar-container">
+            <div id="topbar"></div>
+        </div>
+        <div id="container">
+            <h1>JavaScript Terminal</h1>
+            <div class="centered">
+                <a href="/doodads/">Take me back.</a> | <a href="/">Get me out of here.</a>
+            </div>
+            
+            <form id="form">
+                <label for="command">
+                    <div id="console"></div>
+                    <div id="input">
+                        >&nbsp;<input id="command" name="command">
+                    </div>
+                </label>
+            </form>
+
+            <div id="copyright">
+                (C) <a href="/whoami/">JakubKwantowy</a> 2026
+            </div>
+        </div>
+    </body>
+</html>
