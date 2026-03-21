@@ -9,6 +9,9 @@
         <script src="/doodads/terminal.js"></script>
         <style>
             #console {
+                font-family: var(--font-default);
+                font-size: inherit;
+
                 height: 25em;
                 overflow: scroll;
             }
@@ -46,7 +49,7 @@
             
             <form id="form">
                 <label for="command">
-                    <div id="console"></div>
+                    <pre id="console"></pre>
                     <div id="input">
                         >&nbsp;<input id="command" name="command">
                     </div>

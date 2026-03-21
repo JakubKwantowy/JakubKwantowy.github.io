@@ -42,6 +42,20 @@ window.addEventListener('load', e => {
     }
 
     /**
+     * @param {String} command 
+     */
+    function runCommand(command) {
+        try {
+            print('lightgreen', '>', command)
+            const v = eval(command)
+            if(v == undefined) print('cyan', '<', 'undefined')
+            else print('cyan', '<', v)
+        } catch(e) {
+            console.error(e)
+        }
+    }
+
+    /**
      * @type {HTMLFormElement}
      */
     const form = document.getElementById('form')
@@ -52,13 +66,17 @@ window.addEventListener('load', e => {
         const {value} = command
         command.value = ''
 
-        try {
-            print('lightgreen', '> ', value)
-            const v = eval(value)
-            if(v == undefined) print('cyan', '< ', 'undefined')
-            else print('cyan', '< ', v)
-        } catch(e) {
-            console.error(e)
-        }
+        if(value) runCommand(value)
     })
+
+    const {search} = window.location
+    if(search.startsWith('?')) {
+        const queries = Object.fromEntries(search.substring(1).split('&').map(v => v.split('=').map(
+            v => decodeURIComponent(v)
+                .replaceAll('+', ' ')
+        )))
+        const {command} = queries
+        if(command)
+            runCommand(command)
+    }
 })
